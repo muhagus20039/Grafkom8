@@ -1,0 +1,4 @@
+Sebelum menjalankan file klp8grafkom.py silahkan ikuti tutorial berikut :
+  1. Instal Python di link : https://www.python.org/downloads/
+  2. Install library Numpy dengan mengetikkan pip install numpy di command prompt atau terminal
+  3. Install library Mathplotlib dengan mengetikkan pip install mathplotlib di command prompt atau terminal
