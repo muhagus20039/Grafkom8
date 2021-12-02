@@ -1,0 +1,18 @@
+1. Tentukan 2 titik, yaitu titik A (x1,y1) dan B (x2,y2)
+2. Jika x1 == x2 ( garis vertikal ), maka :
+  -> y = y + 1 dan x tetap
+  -> gambarkan titik kordinat x,y
+  -> selesai
+3. Jika y1 == y2 ( garis horizontal ), maka :
+  -> x = x + 1 dan y tetap
+  -> gambarkan titik kordinat x,y
+  -> selesai
+anggap x2 > x1 , (jika sebaliknya, gantilah x2 dengan x1)
+4. Hitung kemiringan garis m = (y2 − y1 )/( x2 − x1 )
+5. N = x2 - x1 + 1
+6. x = x1
+7. Ulang sebanyak N kali:
+  -> y = m (x -x1 ) + y1
+  -> lakukan pembulatan pada y
+  -> gambarkan titik kordinat x,y
+  -> x = x + 1
