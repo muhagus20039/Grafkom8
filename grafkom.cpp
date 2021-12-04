@@ -2,16 +2,19 @@
 #include <cmath>
 using namespace std;
 
-int main(){
+int main() {
 
-    int N,x,y,i,kordinatY;
-    float x1,x2,y1,y2,nilaiX,nilaiY,m,rumusY;
+    int N, x, y, i, kordinatY;
+    float x1, x2, y1, y2, nilaiX, nilaiY, m, rumusY;
 
-    cout<<"Masukan x1   : ";cin>>x1;
-    cout<<"Masukan y1   : ";cin>>y1;
-    cout<<"Masukan x2   : ";cin>>x2;
-    cout<<"Masukan y2   : ";cin>>y2;
-    cout<<"------------------------------------"<<endl;
+    cout << "Masukan x1  : "; cin >> x1;
+    cout << "Masukan y1  : "; cin >> y1;
+    cout << "Masukan x2  : "; cin >> x2;
+    cout << "Masukan y2  : "; cin >> y2;
+    cout << "------------------------------------" << endl;
+    cout << "Titik awal  : A(" << x1 << "," << y1 << ")" << endl;
+    cout << "Titik akhir : B(" << x2 << "," << y2 << ")" << endl;
+    cout << "------------------------------------" << endl;
 
     nilaiY = y2 - y1;
     nilaiX = x2 - x1;
@@ -22,17 +25,18 @@ int main(){
 
     i = 1;
 
-    if (x1 == x2){
+
+    if (x1 == x2) {
         int titikA[] = {};
         int titikB[] = {};
         while (i < y2){
-            if (y1 == y2){
-                cout<<"Garis yang di lewati yaitu "<<x<<","<<y<<endl;
+            if (y1 == y2) {
+                cout << "Garis yang di lewati yaitu " << x << "," << y <<endl;
                 int titikA[] = {x};
                 int titikB[] = {y};
             }
-            else{
-                cout<<"Garis yang di lewati yaitu "<<x<<","<<y+i<<endl;
+            else {
+                cout<<"Garis yang di lewati yaitu " <<x << "," << y+i <<endl;
                 int titikA[] = {x};
                 int titikB[] = {y+i};
             }
@@ -40,17 +44,17 @@ int main(){
         }
     }
 
-    else if (y1 == y2){
+    else if (y1 == y2) {
         int titikA[] = {};
         int titikB[] = {};
         while (i < y2){
-            if (x1 == x2){
-                cout<<"Garis yang di lewati yaitu "<<x<<","<<y<<endl;
+            if (x1 == x2) {
+                cout << "Garis yang dilewati yaitu " << x << "," << y <<endl;
                 int titikA[] = {x};
                 int titikB[] = {y};
             }
-            else{
-                cout<<"Garis yang di lewati yaitu "<<x+i<<","<<y<<endl;
+            else {
+                cout<<"Garis yang dilewati yaitu " << x+i << "," << y <<endl;
                 int titikA[] = {x+i};
                 int titikB[] = {y};
             }
@@ -58,15 +62,15 @@ int main(){
         }
     }
 
-    else{
+    else {
         int titikA[] = {};
         int titikB[] = {};
         while (i <= N){
             m = nilaiY / nilaiX;
             rumusY = m * (x - x1) + y1;
             kordinatY = round(rumusY);
-            x+=1;
-            cout<<"Garis yang di lewati yaitu "<<x-1<<","<<kordinatY<<endl;
+            x += 1;
+            cout << "Garis yang dilewati yaitu " << x-1 << "," << kordinatY << endl;
             int titikA[] = {x-1};
             int titikB[] = {kordinatY};
             i++;
