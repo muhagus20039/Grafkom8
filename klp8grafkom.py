@@ -10,7 +10,7 @@ x2 = int(input('Masukan x2  : '))
 y2 = int(input('Masukan y2  : '))
 print('------------------------------------------------')
 print('Titik awal  : ','(',x1,',',y1,')')
-print('Titik akhir  : ','(',x2,',',y2,')')
+print('Titik akhir : ','(',x2,',',y2,')')
 print('------------------------------------------------')
 
 # N adalah banyaknya iterasi yang dilakukan apabila x1 != x2 atau y1 != y2
@@ -82,10 +82,11 @@ else:
         m = nilaiY / nilaiX
         rumusY = m * (x - x1) + y1
         kordinatY = round(rumusY)
-        x+=1
-        print('Garis yang di lewati yaitu', x-1,',', kordinatY)
-        titikA.append(x-1)
+        
+        print('Garis yang di lewati yaitu', x,',', kordinatY)
+        titikA.append(x)
         titikB.append(kordinatY)
+        x+=1
         i+=1
 
 # apppend digunakan untuk menambah item ke dalam array atau list
