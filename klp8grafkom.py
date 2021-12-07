@@ -9,6 +9,9 @@ y1 = int(input('Masukan y1  : '))
 x2 = int(input('Masukan x2  : '))
 y2 = int(input('Masukan y2  : '))
 print('------------------------------------------------')
+print('Titik awal  : ','(',x1,',',y1,')')
+print('Titik akhir  : ','(',x2,',',y2,')')
+print('------------------------------------------------')
 
 # N adalah banyaknya iterasi yang dilakukan apabila x1 != x2 atau y1 != y2
 nilaiY = y2 - y1
