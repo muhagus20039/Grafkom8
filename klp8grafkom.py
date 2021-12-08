@@ -22,8 +22,6 @@ N = x2 - x1 + 1
 x = x1
 y = y1
 
-i = 1
-
 # membuat pengkondisian dengan beberapa syarat seperti :
 
 # ---> Jika x1 sama dengan x2 (garis vertikal), maka :
@@ -43,6 +41,9 @@ i = 1
 #       d. lakukan pembulatan pada y
 #       e. gambar titik (x, y(pembulatan))
 #       f. x = x + 1
+
+# inisialisasi awal perulangan
+i = 1
 
 if x1 == x2:
     titikA = []
