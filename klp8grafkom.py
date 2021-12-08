@@ -82,7 +82,7 @@ else:
     while i <= N:
         m = nilaiY / nilaiX
         rumusY = m * (x - x1) + y1
-        kordinatY = round(rumusY)
+        kordinatY = round(rumusY, 2) # round = untuk membulatkan angka ke jumlah digit yang ditentukan. Nilai 2 = jumlah digit angka yang dibulatkan
         
         print('Garis yang di lewati yaitu', x,',', kordinatY)
         titikA.append(x)
